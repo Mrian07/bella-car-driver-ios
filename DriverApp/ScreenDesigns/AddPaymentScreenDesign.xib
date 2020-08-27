@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPaymentUV" customModule="DriverApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cardImgView" destination="y1G-Sk-rBa" id="uVN-4j-Cm0"/>
+                <outlet property="cardNameAreaView" destination="lN8-G9-Jn7" id="38L-1z-J5a"/>
+                <outlet property="cardNameTxtField" destination="7u0-wJ-dM4" id="iXv-ef-eyT"/>
+                <outlet property="configCardBtn" destination="yee-vN-IvI" id="93Q-yF-ScO"/>
+                <outlet property="creditCardNumView" destination="Vsg-Mg-YKf" id="yoB-Co-7c9"/>
+                <outlet property="creditCardTxtField" destination="WKs-fC-d8i" id="uZC-4B-whk"/>
+                <outlet property="cvvTxtField" destination="5oQ-7A-ZEI" id="Lg4-rb-J56"/>
+                <outlet property="cvvView" destination="0oM-YZ-glS" id="YJS-yf-liY"/>
+                <outlet property="expiryView" destination="dSQ-9j-djj" id="nS1-Wa-BRm"/>
+                <outlet property="monthTxtField" destination="O4G-mN-1A7" id="3Cz-ys-7bD"/>
+                <outlet property="stripeCardTxtField" destination="fWj-KT-VfU" id="pBt-8u-meb"/>
+                <outlet property="yearTxtField" destination="0Gj-96-NPJ" id="VfM-qN-iRd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="595"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_sample" translatesAutoresizingMaskIntoConstraints="NO" id="y1G-Sk-rBa">
+                    <rect key="frame" x="16" y="16" width="343" height="235"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="235" id="npt-CE-bk5"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="TbL-8O-Liq">
+                    <rect key="frame" x="42" y="261" width="291" height="234"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWj-KT-VfU" customClass="STPPaymentCardTextField">
+                            <rect key="frame" x="0.0" y="-70" width="291" height="70"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="PFI-pf-nsB"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsg-Mg-YKf">
+                            <rect key="frame" x="0.0" y="0.0" width="291" height="70"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKs-fC-d8i" customClass="MyTextField" customModule="DriverApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="7.5" width="251" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="1mj-Ee-gf1"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="WKs-fC-d8i" secondAttribute="trailing" constant="20" id="D10-aP-EJG"/>
+                                <constraint firstItem="WKs-fC-d8i" firstAttribute="top" secondItem="Vsg-Mg-YKf" secondAttribute="top" constant="8" id="VUV-cD-Xhh"/>
+                                <constraint firstItem="WKs-fC-d8i" firstAttribute="leading" secondItem="Vsg-Mg-YKf" secondAttribute="leading" constant="20" id="wQF-No-gps"/>
+                                <constraint firstAttribute="height" constant="70" id="zcw-os-763"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lN8-G9-Jn7">
+                            <rect key="frame" x="0.0" y="76" width="291" height="70"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7u0-wJ-dM4" customClass="MyTextField" customModule="DriverApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="8" width="251" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="SBo-4z-bR4"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="7u0-wJ-dM4" firstAttribute="leading" secondItem="lN8-G9-Jn7" secondAttribute="leading" constant="20" id="Dsp-8y-3gv"/>
+                                <constraint firstAttribute="trailing" secondItem="7u0-wJ-dM4" secondAttribute="trailing" constant="20" id="Vta-J1-w3n"/>
+                                <constraint firstItem="7u0-wJ-dM4" firstAttribute="top" secondItem="lN8-G9-Jn7" secondAttribute="top" constant="8" id="VzM-w2-e3A"/>
+                                <constraint firstAttribute="height" constant="70" id="hKs-mR-GdO"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSQ-9j-djj">
+                            <rect key="frame" x="0.0" y="82" width="291" height="70"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4G-mN-1A7" customClass="MyTextField" customModule="DriverApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="8" width="120" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="KXS-Uv-y8V"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrO-MD-t6m">
+                                    <rect key="frame" x="145" y="5" width="1" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="0MV-5Q-WVu"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Gj-96-NPJ" customClass="MyTextField" customModule="DriverApp" customModuleProvider="target">
+                                    <rect key="frame" x="151" y="8" width="120" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="RGB-91-3fc"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="NrO-MD-t6m" firstAttribute="top" secondItem="dSQ-9j-djj" secondAttribute="top" constant="5" id="K5f-cl-TKf"/>
+                                <constraint firstItem="NrO-MD-t6m" firstAttribute="centerX" secondItem="dSQ-9j-djj" secondAttribute="centerX" id="MUC-yp-9ve"/>
+                                <constraint firstAttribute="bottom" secondItem="NrO-MD-t6m" secondAttribute="bottom" constant="5" id="VFP-gV-5GX"/>
+                                <constraint firstAttribute="height" constant="70" id="Zg4-69-7CM"/>
+                                <constraint firstItem="NrO-MD-t6m" firstAttribute="leading" secondItem="O4G-mN-1A7" secondAttribute="trailing" constant="5" id="aXs-W1-JAl"/>
+                                <constraint firstItem="NrO-MD-t6m" firstAttribute="centerY" secondItem="dSQ-9j-djj" secondAttribute="centerY" id="b7d-hO-g86"/>
+                                <constraint firstItem="0Gj-96-NPJ" firstAttribute="top" secondItem="dSQ-9j-djj" secondAttribute="top" constant="8" id="ef1-cZ-U6G"/>
+                                <constraint firstItem="O4G-mN-1A7" firstAttribute="leading" secondItem="dSQ-9j-djj" secondAttribute="leading" constant="20" id="eiH-rH-ALa"/>
+                                <constraint firstAttribute="trailing" secondItem="0Gj-96-NPJ" secondAttribute="trailing" constant="20" id="ig7-6g-K9t"/>
+                                <constraint firstItem="O4G-mN-1A7" firstAttribute="top" secondItem="dSQ-9j-djj" secondAttribute="top" constant="8" id="jRo-1u-fVv"/>
+                                <constraint firstItem="0Gj-96-NPJ" firstAttribute="leading" secondItem="NrO-MD-t6m" secondAttribute="trailing" constant="5" id="oR1-p4-uER"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oM-YZ-glS">
+                            <rect key="frame" x="0.0" y="164" width="291" height="70"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oQ-7A-ZEI" customClass="MyTextField" customModule="DriverApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="8" width="251" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="3lX-8H-521"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="5oQ-7A-ZEI" firstAttribute="leading" secondItem="0oM-YZ-glS" secondAttribute="leading" constant="20" id="Ci8-TU-mKM"/>
+                                <constraint firstAttribute="trailing" secondItem="5oQ-7A-ZEI" secondAttribute="trailing" constant="20" id="PxK-LQ-Bv9"/>
+                                <constraint firstItem="5oQ-7A-ZEI" firstAttribute="top" secondItem="0oM-YZ-glS" secondAttribute="top" constant="8" id="VmG-9x-h6c"/>
+                                <constraint firstAttribute="height" constant="70" id="vos-Nr-Okv"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yee-vN-IvI" customClass="MyButton" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="515" width="343" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="nkW-QS-qt7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="y1G-Sk-rBa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Bh4-t7-PL1"/>
+                <constraint firstAttribute="trailing" secondItem="TbL-8O-Liq" secondAttribute="trailing" constant="42" id="YZX-bw-b0S"/>
+                <constraint firstAttribute="trailing" secondItem="yee-vN-IvI" secondAttribute="trailing" constant="16" id="Zg3-tS-3xh"/>
+                <constraint firstItem="yee-vN-IvI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="dIq-hi-MfT"/>
+                <constraint firstItem="y1G-Sk-rBa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="esw-Si-pXV"/>
+                <constraint firstItem="yee-vN-IvI" firstAttribute="top" secondItem="TbL-8O-Liq" secondAttribute="bottom" constant="20" id="gvA-ky-r3W"/>
+                <constraint firstItem="TbL-8O-Liq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="pfj-qj-wMe"/>
+                <constraint firstAttribute="trailing" secondItem="y1G-Sk-rBa" secondAttribute="trailing" constant="16" id="wUX-Sb-mOK"/>
+                <constraint firstItem="TbL-8O-Liq" firstAttribute="top" secondItem="y1G-Sk-rBa" secondAttribute="bottom" constant="10" id="z4M-fn-MfM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="VV2-kg-mIL"/>
+            <point key="canvasLocation" x="42.5" y="5.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="card_sample" width="512" height="320"/>
+    </resources>
+</document>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>553156655330-d6ssuommeen1hflbsv8d6smgka778ku2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.553156655330-d6ssuommeen1hflbsv8d6smgka778ku2</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>553156655330-fdd7ku3eoqj39ghjsov4a5kdiu8eac5c.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyACMBg3yI3HwmyDTiq2FQfYZl7DW0fCG2Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>553156655330</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.meuvupt.motorista</string>
+	<key>PROJECT_ID</key>
+	<string>meuvupt-android-ios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>meuvupt-android-ios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:553156655330:ios:b952cd042dc5e403</string>
+	<key>DATABASE_URL</key>
+	<string>https://meuvupt-android-ios.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationTVCell" rowHeight="140" id="kBp-Rw-PUO" customClass="NotificationTVCell" customModule="PassengerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kBp-Rw-PUO" id="Afa-2Z-lIE">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFG-mF-YoP" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                        <rect key="frame" x="15" y="15" width="345" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1ef-1p-tVn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MU-UM-Bu9" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                        <rect key="frame" x="15" y="40" width="345" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="48S-9O-V00"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Light"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L47-Qe-bex" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                        <rect key="frame" x="15" y="106" width="220" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="iaG-bX-GSd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ef-Au-m3L" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                        <rect key="frame" x="240" y="106" width="120" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="i7d-Fi-rKO"/>
+                            <constraint firstAttribute="height" constant="20" id="wc9-27-69p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8ef-Au-m3L" firstAttribute="leading" secondItem="L47-Qe-bex" secondAttribute="trailing" constant="5" id="3RU-SX-PeT"/>
+                    <constraint firstItem="wFG-mF-YoP" firstAttribute="top" secondItem="Afa-2Z-lIE" secondAttribute="top" constant="15" id="4iN-2o-ONT"/>
+                    <constraint firstItem="wFG-mF-YoP" firstAttribute="leading" secondItem="Afa-2Z-lIE" secondAttribute="leading" constant="15" id="857-Pa-0xP"/>
+                    <constraint firstAttribute="trailing" secondItem="wFG-mF-YoP" secondAttribute="trailing" constant="15" id="A62-jN-bF2"/>
+                    <constraint firstItem="8MU-UM-Bu9" firstAttribute="leading" secondItem="Afa-2Z-lIE" secondAttribute="leading" constant="15" id="EyV-W4-e4G"/>
+                    <constraint firstItem="8MU-UM-Bu9" firstAttribute="top" secondItem="wFG-mF-YoP" secondAttribute="bottom" constant="5" id="JFs-cv-jh8"/>
+                    <constraint firstAttribute="trailing" secondItem="8ef-Au-m3L" secondAttribute="trailing" constant="15" id="M0f-XG-d5J"/>
+                    <constraint firstItem="8ef-Au-m3L" firstAttribute="top" secondItem="8MU-UM-Bu9" secondAttribute="bottom" constant="8" id="M7z-ok-fOC"/>
+                    <constraint firstItem="L47-Qe-bex" firstAttribute="top" secondItem="8MU-UM-Bu9" secondAttribute="bottom" constant="8" id="PKV-8H-jkY"/>
+                    <constraint firstAttribute="trailing" secondItem="8MU-UM-Bu9" secondAttribute="trailing" constant="15" id="s8j-O7-Cjb"/>
+                    <constraint firstItem="L47-Qe-bex" firstAttribute="leading" secondItem="Afa-2Z-lIE" secondAttribute="leading" constant="15" id="yhw-BV-OJl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLbl" destination="L47-Qe-bex" id="JFR-ee-v9H"/>
+                <outlet property="readMoreLbl" destination="8ef-Au-m3L" id="zsU-bw-VJ5"/>
+                <outlet property="subTitleLbl" destination="8MU-UM-Bu9" id="gUO-wT-gOY"/>
+                <outlet property="titleLbl" destination="wFG-mF-YoP" id="cef-eu-oUe"/>
+                <outlet property="titleViewHeight" destination="1ef-1p-tVn" id="yRq-18-EOn"/>
+            </connections>
+            <point key="canvasLocation" x="-109.59999999999999" y="-70.164917541229386"/>
+        </tableViewCell>
+    </objects>
+</document>

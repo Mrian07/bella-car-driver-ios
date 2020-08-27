@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  DriverApp
+
+  Created by Admin on 10/26/18.
+  Copyright © 2018 V3Cube. All rights reserved.
+*/
+"SIN_INCOMING_CALL" = "Incoming call ";
+"SIN_INCOMING_CALL_DISPLAY_NAME" = "%@";
+"SIN_INCOMING_IM" = "Incoming message";
+"SIN_INCOMING_IM_DISPLAY_NAME" = "Incoming message from ";
+"SIN_INCOMING_VIDEO_CALL" = "Incoming video call ";
+"SIN_INCOMING_VIDEO_CALL_DISPLAY_NAME" = "Incoming video call from ";
+"SIN_CANCEL_CALL" = "Call Ended";

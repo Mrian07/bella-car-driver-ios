@@ -1,0 +1,11 @@
+framework module ConfigData {
+  umbrella header "ConfigData.h"
+
+  export *
+  module * { export * }
+}
+
+module ConfigData.Swift {
+    header "ConfigData-Swift.h"
+    requires objc
+}

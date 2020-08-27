@@ -1,0 +1,11 @@
+framework module SwiftExtensionData {
+  umbrella header "SwiftExtensionData.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftExtensionData.Swift {
+    header "SwiftExtensionData-Swift.h"
+    requires objc
+}

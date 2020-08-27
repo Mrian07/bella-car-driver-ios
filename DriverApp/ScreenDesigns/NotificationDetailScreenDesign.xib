@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationDetailUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="dateLbl" destination="3g3-Hy-aut" id="4zS-VR-MUd"/>
+                <outlet property="imgView" destination="WY6-87-p6P" id="1uQ-VX-6Xe"/>
+                <outlet property="imgViewHeight" destination="MJ3-gK-fYn" id="dER-03-HJA"/>
+                <outlet property="textLbl" destination="KKN-Pa-Bep" id="ROw-nd-8F8"/>
+                <outlet property="titleLbl" destination="GZY-nF-Uf7" id="RkG-4T-i6B"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZY-nF-Uf7" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="25" width="345" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Regular"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3g3-Hy-aut" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="14" y="45" width="345" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WY6-87-p6P">
+                    <rect key="frame" x="15" y="65" width="345" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="MJ3-gK-fYn"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKN-Pa-Bep" customClass="MyLabel">
+                    <rect key="frame" x="15" y="80" width="345" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Light"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GZY-nF-Uf7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="1LB-4f-Z3A"/>
+                <constraint firstItem="WY6-87-p6P" firstAttribute="top" secondItem="3g3-Hy-aut" secondAttribute="bottom" constant="20" id="H5U-gm-BN1"/>
+                <constraint firstAttribute="trailing" secondItem="GZY-nF-Uf7" secondAttribute="trailing" constant="15" id="N2D-IZ-KpL"/>
+                <constraint firstAttribute="trailing" secondItem="WY6-87-p6P" secondAttribute="trailing" constant="15" id="Oah-g3-etg"/>
+                <constraint firstItem="3g3-Hy-aut" firstAttribute="top" secondItem="GZY-nF-Uf7" secondAttribute="bottom" constant="20" id="U4H-Kt-rk8"/>
+                <constraint firstAttribute="trailing" secondItem="3g3-Hy-aut" secondAttribute="trailing" constant="16" id="U9o-v0-fmB"/>
+                <constraint firstItem="GZY-nF-Uf7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="WTd-Wb-vIw"/>
+                <constraint firstAttribute="trailing" secondItem="KKN-Pa-Bep" secondAttribute="trailing" constant="15" id="ZOb-Oa-3Qf"/>
+                <constraint firstItem="KKN-Pa-Bep" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="aLt-L8-zDj"/>
+                <constraint firstItem="KKN-Pa-Bep" firstAttribute="top" secondItem="WY6-87-p6P" secondAttribute="bottom" constant="15" id="aap-VE-rJ5"/>
+                <constraint firstItem="WY6-87-p6P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="daD-7I-1eh"/>
+                <constraint firstItem="3g3-Hy-aut" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="gIX-Kw-WFh"/>
+            </constraints>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,11 @@
+framework module LiveChatSource {
+  umbrella header "LiveChatSource.h"
+
+  export *
+  module * { export * }
+}
+
+module LiveChatSource.Swift {
+    header "LiveChatSource-Swift.h"
+    requires objc
+}
